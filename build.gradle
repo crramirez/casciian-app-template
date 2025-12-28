@@ -2,6 +2,7 @@ plugins {
     id 'java'
     id 'application'
     id 'org.graalvm.buildtools.native' version '0.11.3'
+    id 'net.researchgate.release' version '3.1.0'
 }
 
 group = 'io.github.crramirez'
@@ -185,3 +186,9 @@ tasks.register('buildPackages') {
     dependsOn buildDeb, buildRpm
 }
 
+release {
+    preTagCommitMessage = '[release] prepare release '
+    tagCommitMessage = '[release] '
+    newVersionCommitMessage = '[release] prepare next '
+    tagTemplate = 'v${version}'
+}
