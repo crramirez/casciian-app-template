@@ -191,4 +191,5 @@ release {
     tagCommitMessage = '[release] '
     newVersionCommitMessage = '[release] prepare next '
     tagTemplate = 'v${version}'
+    buildTasks = ['build', 'jarFull', 'buildPackages']
 }
