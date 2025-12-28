@@ -56,8 +56,7 @@ Or download directly from [GraalVM Downloads](https://www.graalvm.org/downloads/
 #### Building Native Binary
 
 1. Ensure GraalVM Java 25 is installed and configured
-2. Edit `build.gradle` and uncomment the `javaLauncher` section in the `graalvmNative` block
-3. Run:
+2. Run:
 
 ```bash
 ./gradlew nativeCompile
