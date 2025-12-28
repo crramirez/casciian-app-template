@@ -18,9 +18,7 @@
 package io.github.crramirez.casciianapp;
 
 import casciian.TApplication;
-import casciian.TCommand;
 import casciian.TWindow;
-import casciian.event.TCommandEvent;
 
 /**
  * Simple Hello World application using Casciian TUI library.

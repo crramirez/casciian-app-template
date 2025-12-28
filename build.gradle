@@ -78,10 +78,12 @@ graalvmNative {
     toolchainDetection = true
     binaries {
         main {
-            javaLauncher = javaToolchains.launcherFor {
-                languageVersion = JavaLanguageVersion.of(25)
-                vendor = JvmVendorSpec.matching('GraalVM Community')
-            }
+            // Uncomment the following section if you have GraalVM Java 25 installed
+            // and want to use a specific GraalVM toolchain
+            // javaLauncher = javaToolchains.launcherFor {
+            //     languageVersion = JavaLanguageVersion.of(25)
+            //     vendor = JvmVendorSpec.matching('GraalVM Community')
+            // }
 
             imageName = 'casciianapp'
             buildArgs.add('-march=compatibility')
